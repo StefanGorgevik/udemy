@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Script Demo</title>
+	<script>
+		
+		function print() {
+			var name = document.getElementById("name").value;
+			var year = document.getElementById("year").value;
+			var age = 2019 - year;
+			document.getElementById("answer").innerHTML = "Hi " + name + " you are " + age + " years old";
+			if(age%2==1){
+				document.getElementById("answer").style.color = "red";
+			}
+			else{
+				document.getElementById("answer").style.color = "green";
+			}
+			/*document.getElementsByTagName("h1").innerHTML = "Hi " + name + " you are " + age + " years old";*/ 
+			console.log("Hi " + name + " you are " + age + " years old");
+		}
+
+
+
+	</script>
+</head>
+<body>
+
+<label>Insert Name:
+	<input id="name" type="text" name="name">
+</label>
+
+<br>
+
+<label>Insert Year of Birth:
+	<input id="year" type="text" name="year">
+</label>
+
+<br>
+
+<button onclick="print()">Submit</button>
+
+<h1 id="answer"></h1>
+
+</body>
+</html>

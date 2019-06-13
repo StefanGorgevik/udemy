@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Scope</title>
+<script type="text/javascript">
+	var num = 8;
+	function doMath () {
+		num+=1;
+		if(num % 5 == 0) {
+			return true;
+		}
+		else {
+			return false
+		}
+	}
+
+	//call it: num += 1;
+
+			doMath();
+
+	// result is 10 so it is true, because you call num +=1 first, you get 9, and then you call doMath, which adds + 1 on 9, and you get 10, which is true!
+
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

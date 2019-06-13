@@ -1,0 +1,59 @@
+body {
+	max-width: 800px;
+	margin: auto;
+	max-height: 600px;
+	border: 1px solid black;
+}
+
+
+.empty {
+	background: #E3E4E6;
+	width: 200px;
+	height: 55px;
+}
+
+#musiclogo {
+	width: 150px;
+	height: 130px;
+}
+
+#longtext {
+	width: 490px;
+	height: 215px;
+	padding-top: 0;
+}
+
+.music {
+	background: #EDEDED; 
+	width: 620px;
+	height: 55px;
+	text-align: center;
+}
+.armin {
+	width: 180px;
+	height: 130px;
+	padding: 20px auto;
+}
+
+#armintd {
+	width: 200px;
+	height: 150px;
+	vertical-align: 10px;
+}
+
+.upcomingalbum {
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+
+.upcomingimg {
+	padding-top: 5px;
+	float: left;
+}
+
+.tdul {
+	background: #EDEDED;
+	width: 180px;
+	height: inherit;	border: 1px solid black;
+}

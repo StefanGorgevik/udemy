@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing Game</title>
+
+	<script type="text/javascript">
+
+		//create secretNumber
+
+		var secretNumber = 10;
+
+		//ask user for guess
+		
+		var guess = prompt("Guess the secret number!");
+		var guess = Number(guess);
+
+		//check if it is guessed
+
+		if(guess === secretNumber) {
+			alert("You have guess it!");
+		}
+
+		//otherwise, check if higher
+
+		else if(guess > secretNumber) {
+			alert("Too high!");
+		}
+
+		
+		//otherwise, check if lower
+
+		else {
+			alert("Too low!");
+		}
+		
+
+	</script>
+</head>
+<body>
+
+	<h1>Simple Guessing Game</h1>
+
+</body>
+</html>

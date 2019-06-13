@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register!</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<style type="text/css">
+
+
+		body {
+			padding-top: 3%;
+			text-align: center;
+			background-image: url(gallerywithBootstrap3RegisterGuitar.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			color: white;
+			margin: auto;
+			}
+
+			html {
+				height: 100%;
+			}
+
+/*			.container {
+				text-align: justify center;
+			}*/
+
+			#selecttag {
+				width: 10%;
+			    display: inline;
+			    color: black;
+			    text-align: none;
+			  	padding-left: auto;
+			}
+
+			label {
+				color: white;	
+			}
+
+			input [type="submit"] {
+				margin-top: 10px;
+			}
+
+			.btn-group-lg>.btn, .btn-lg {
+				color: black;
+			}
+
+			#checkbox {
+				font-size: 1.5em;
+			}
+
+			input [type="checkbox"] {
+				width: 50px;
+				height: 50px;
+			}
+
+			#checkbox:hover {
+				color: gray;
+			}
+
+
+			#goback {
+				color: white;
+				width: 50px;
+				height: 25px;
+			}			
+			.label-primary {
+				width: 1000px;
+				height: 1000px;
+			}
+
+			h1 {
+				padding-bottom: 50px;
+				font-size: 60px;
+				font-weight: bold;
+			}
+
+			h1:hover {
+				color: brown;
+			}
+
+			
+
+	</style>
+</head>
+<body>
+
+<h1>Register Below</h1>
+
+<div class="container">
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">First Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="First Name" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputName2">Last Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name" required>
+</form>
+</div>
+
+<br> 
+
+<div class="container">
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputName2" placeholder="Email" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Password</label>
+    <input type="password" class="form-control" id="exampleInputEmail2" placeholder="Password" required>
+</form>
+</div>
+
+<br>
+
+<div class="container">
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Country</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Country" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputName2">Address</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Address" required>
+</form>
+</div>
+
+
+<p>
+<div class="container">
+<form id="selecttag">
+  <label id="Birthday">Birthday</label>
+  <select name="Day">
+  	<option>Day</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+  </select>
+
+
+  <select name="month">
+  	<option>Month</option>
+    <option>January</option>
+    <option>February</option>
+    <option>March</option>
+    <option>April</option>
+    <option>May</option>
+    <option>June</option>
+    <option>July</option>
+    <option>August</option>
+    <option>September</option>
+    <option>October</option>
+    <option>November</option>
+    <option>December</option>
+  </select>
+
+
+
+  <select name="Year">
+    <option>Year</option>
+    <option>1990</option>
+    <option>1991</option>
+    <option>1992</option>
+    <option>1993</option>
+    <option>1994</option>
+    <option>1995</option>
+    <option>1996</option>
+    <option>1997</option>
+    <option>1998</option>
+    <option>1999</option>
+    <option>2000</option>
+    <option>2001</option>
+  </select>
+</form>
+</div>
+</p>
+<br>
+<div id="checkbox">
+	<label>I promise that I won't die of beauty!
+	<input type="checkbox" name="Terms" value="terms"></label>
+</div>
+
+
+<div>
+<button class="btn btn-default btn-lg"><a href="file:///D:/Programming/gallerywithBootstrap3.html">Register</a></button>
+</div>
+
+<div>
+	<span class="label label-primary"><a id="goback" href="file:///D:/Programming/gallerywithBootstrap3LandingSite.html#">Go Back!</a></span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>conditionals</title>
+
+	<script type="text/javascript">
+		
+		var age = prompt("How old are you?");
+
+		age = Number(age); /*Number Converter*/
+
+		/*if age is negative*/
+		if(age < 0) {
+			console.log("Error!")
+		}
+
+		/*if age is 21*/	
+		if(age ===  21) {
+			console.log("Happy 21st birthday!")
+		}
+
+		/*if age is odd*/
+		if(age % 2 !== 0) {
+			console.log("Your age is odd!")
+		}
+
+		/*if age is a perfect square*/
+		if(age % Math.sqrt(age) === 0) {
+			console.log("Your age is a perfect square!")
+		}
+
+	</script>
+</head>
+<body>
+
+
+
+</body>
+</html>

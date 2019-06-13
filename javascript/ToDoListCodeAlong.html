@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+		<script type="text/javascript">
+
+window.setTimeout(function() {
+
+
+
+var todos = ["Get Groceries"];
+
+var input = prompt("What would you like to do?");
+
+while(input !== "quit") {
+	
+	if(input === "list") {
+	console.log(todos);
+}
+	else if(input === "new") {
+	var newToDo = prompt("Enter new todo!");
+	todos.push(newToDo);
+}
+	input = prompt("What would you like to do?");
+
+}
+console.log("Ok, you quit the app!");
+
+
+
+
+}, 500);
+
+		</script>
+</head>
+<body>
+
+<h1>ToDo List:</h1>
+
+<ul>
+	<li>"new" - Add a ToDo</li>
+	<li>"list" - List of ToDo</li>
+	<li>"quit" - Quit</li>
+</ul>
+
+
+
+
+
+</body>
+</html>

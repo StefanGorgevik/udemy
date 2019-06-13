@@ -1,0 +1,189 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Things I've Learned</title>
+</head>
+<body>
+<h1>Things I've Learned</h1>	
+
+<h3>Internet basics</h3>
+
+<ol>
+	<li>HTTP Requests</li>
+	<li>IP Address</li>
+	<li>Servers</li>
+</ol>
+
+<h1>HTML</h1>
+
+<ul>
+	<li>Stands for <strong>Hyper Text Markup Language</strong></li>
+	<li>Lots of tags
+		<ul>
+			<li>Boilerplate
+				<ol>
+					<li>Doctype</li>
+					<li>HTML</li>
+					<li>Head
+						<ol>
+							<li>Title</li>
+						</ol>
+					</li>
+					<li>Body</li>
+				</ol>
+			</li>
+			<li>Headings</li>
+			<li>Paragraph</li>
+			<li><em>em</em></li>
+			<li><strong>strong</strong></li>
+		</ul>
+	</li>
+</ul>
+
+<hr>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rusty Steel</title>
+</head>
+<body>
+<h1>Rusty Steele</h1>
+
+<p>Hi, I'm a dog. Woof!</p>
+<div><img src="http://i.imgur.com/Zl0A6erm.jpg"></div>
+
+<h2>Some of my favorite places</h2>
+<ul>
+	<li>The park</li>
+	<li>The beach</li>
+	<li>The fire hydrant</li>
+</ul>
+Make sure to follow me on <a href="https://www.instagram.com/stefan.gorgevik/?hl=en">Instagram</a>
+
+</body>
+</html> 
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon Chart</title>
+</head>
+<body>
+	<h1>First Gen Pokemon Chart</h1>
+
+<table border="1">
+	<thead>
+		<th>Image</th>
+		<th>Name</th>
+		<th>Type</th>
+		<th>Evolves Into</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><img width="200" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
+			<td>Bulbasaur</td>
+			<td>Grass/Poison</td>
+			<td><a href="http://pokemon.wikia.com/wiki/Ivysaur ">Ivysaur</a></td>
+		</tr>
+		<tr>
+			<td><img width="200" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
+			<td>Charmander</td>
+			<td>Fire</td>
+			<td><a href="http://pokemon.wikia.com/wiki/Charmeleon ">Charmeleon</a></td>
+		</tr>
+		<tr>
+			<td><img width="200" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></td>
+			<td>Squirtle</td>
+			<td>Water</td>
+			<td><a href="http://pokemon.wikia.com/wiki/Ivysaur ">Wartortle</a></td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
+
+<br>
+<hr>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register!</h1>
+
+<form action="https://saveinfo.php" method="GET">
+	<label for="firstname">First Name:</label>
+		<input id="firstname" type="text" name="firstname" required>
+	<label for="lastname">Last Name</label>
+		<input id="lastname" type="text" name="Last Name" required>
+
+<div>
+	<label>
+		Male
+		<input type="radio" name="gender" value="male">
+	</label>
+	<label>
+		Female
+		<input type="radio" name="gender" value="female">
+	</label>
+	<label>
+		Other
+		<input type="radio" name="gender" value="other">
+	</label>
+</div>
+
+<div>
+	<label>
+		Email:
+		<input type="email" name="email" required>
+	</label>
+	<label>
+		Password:
+		<input type="password" name="password" pattern=".{5,10}" required title="Please write 5 to 10 characters">
+	</label>
+
+<div>
+	<label>
+		Birthday:
+	<select name="Month">
+		<option>Month</option>
+		<option>March</option>
+		<option>April</option>
+		<option>May</option>
+	</select>
+	<select name="Day">
+		<option>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+	<select name="Year">
+		<option>Year</option>
+		<option>1990</option>
+		<option>1992</option>
+		<option>1994</option>
+	</select>
+	</label>
+</div>
+<div>
+	<label>
+		I agree to the terms and conditions
+		<input type="checkbox" name="doyouagree">
+	</label>
+</div>
+
+<input type="Submit" name="Submit">
+
+</form>
+</body>
+</html>

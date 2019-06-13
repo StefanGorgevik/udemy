@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercises</title>
+	<script type="text/javascript">
+
+	//var firstName = prompt("What is your name?");
+	//var lastName = prompt("What is your last name?");
+	//var age = prompt("How old are you?");
+   // console.log("Your full name is " + firstName + " " + lastName);
+	//console.log("You are " + age + " years old!");
+
+
+
+//Age calculator
+
+/*var age = prompt("How old are you?");
+var days = 365;
+var daysOnEarth = age * days;
+alert(daysOnEarth);
+*/
+
+
+//Age Restriction
+
+/*var age = prompt("how old are you?");
+if(age < 18) {
+	console.log("Sorry, you can't enter!")
+}
+
+else if (age >= 18 && age < 21) {
+	console.log("Enter, but don't drink!")
+}
+
+else {
+	console.log("You can enter and drink!")
+}*/
+
+
+//2nd exercise on conditionals
+
+/*var age = prompt("How old are you?");
+age = Number(age);
+
+if(age < 0) {
+	console.log("Error!");
+}
+
+else if(age === 21) {
+	console.log("Happy 21st birthday!");
+}
+
+else {
+	console.log("You are born, but it is not your birthday")
+}
+*/
+
+//Perfect Square
+/*var age = prompt("How old are you?");
+age = Number(age);
+
+if(age % Math.sqrt(age) === 0) {
+	console.log("Your age make perfect square!")
+}
+
+else {
+	console.log("Your age don't make perfect square!")
+}
+*/
+
+
+//SIMPLE GUESSING GAME
+
+/*var secretNumber = 7;
+var guess = prompt("Try and guess the secret number!");
+var guess = Number(guess);
+
+if (guess == secretNumber) {
+	alert("You have guessed it!")
+}
+
+else if(guess > secretNumber) {
+	alert("Too high, try again!");
+}
+else {
+	alert("Too low! Try again!");
+}*/
+
+//SIMPLE GUESSING GAME WITH WHILE!
+
+/*var secretNumber = 7;
+var guess = prompt("Try and guess the secret number!");
+var guess = Number(guess);
+
+while(true) {
+	if(guess == secretNumber) {
+		alert("You got it right!");
+		break;
+	}
+	else if(guess < secretNumber){
+		guess = prompt("Too low! Guess again!");
+	}
+	else{
+		guess = prompt("Too high! Guess again!");
+	}
+}
+	*/
+
+//print all numbers between -10 and 19
+/*var num = -10;
+
+while(num < 20) {
+	console.log(num);
+	num++;
+}
+*/
+
+//with FOR Loop
+
+/*for(var i = -10; i < 20; i++) {
+	console.log(i);
+}*/
+
+//print all even numbers between 10 and 40
+
+/*var num = 10;
+while(num < 41) {
+	if(num % 2 == 0) {
+	console.log(num);
+	}
+	num++;
+}*/
+
+/*for(var num = 10; num < 41; num++) {
+	if(num % 2 == 0) {
+		console.log(num);
+	}
+}
+*/
+//print all odd numbers between 300 and 333
+
+/*var num = 300;
+while(num <= 333) {
+	if(num % 2 == 1) {
+		console.log(num);
+		}
+	num++;
+}
+*/
+
+/*for(var num = 300; num < 334; num++) {
+	if(num % 2 != 0) {
+		console.log(num);
+	}
+}
+*/
+///print all nubmers divisible by 5 and 3 between 5 and 50
+
+/*var num = 5;
+
+while(num < 51) {
+	if(num % 5 === 0 && num % 3 === 0) {
+		console.log(num);
+	}
+	num++;
+}
+*/
+//same but with FOR loop
+
+/*for(num = 5; num <= 50; num++) {
+	if(num % 5 === 0 && num % 3 === 0) {
+		console.log(num);
+	}
+}
+*/
+
+
+
+/*console.log("Annoy-omatic");
+
+var answer = prompt("Are we there yet?");
+
+while(answer !== "yes" && answer !== "yeah") {
+	var answer = prompt("Are we there yet?");
+}
+
+alert("Yes, we have arrived bro!")
+*/
+
+
+/*console.log("Annoy-omatic with Index-OF");
+
+var answer = prompt("Are we there yet?");
+while(answer.indexOf("yes") === - 1 && answer.indexOf("yeah") === - 1) {
+	var answer = prompt("Are we there yet?");
+}
+
+alert("Yes, we have arrived bro!")
+*/
+
+
+
+//
+console.log("Isprintaj gi site 4 cifreni broevi chij zbir na cifrite e neparen broj!")
+
+/*var num = 1000;
+while(num < 10000) {
+	var temp = num;
+	var zbir = 0;
+	while (temp > 0) {
+		zbir += parseInt(temp % 10);
+		temp = parseInt(temp / 10);
+	}
+	if(zbir % 2 != 0) {
+		console.log(num);
+	}
+	num++;
+}
+
+
+*/
+
+/*console.log("Repeating pattern of 01234 01234 01234")
+
+var i = 0;
+var repeat = 1;
+while(i < 5) {
+	console.log(i);
+	i++;
+	if(i > 4) {
+		repeat++;
+		i = 0;
+	}
+	if(repeat > 3) {
+		break;
+	}
+}*/
+
+/*console.log("Make an output of 111222333444")
+
+for(var i = 1; i < 5; i++) {
+	var repeat = 0;
+	 while(repeat < 3) {
+	 	console.log(i)
+	 	repeat++;
+	 }
+}
+*/
+/*console.log("Or");
+
+for(var i = 1; i < 5; i++) {
+	console.log(i);
+	console.log(i);
+	console.log(i);
+	console.log(" ");
+}
+*/
+/*console.log("IS EVEN FUNCTION");
+
+function isEven(num) {
+	if(num % 2 == 0) {
+		console.log(num + " is even");
+	}
+	else {
+		console.log(num + " is not even");
+	}
+}*/
+
+/*console.log("Factorial!!")
+
+function factorial(num) {
+	var result = 1;
+	for(var i = 2; i <= num; i++) {
+		result *= i;
+		
+	}
+	return result;
+}
+*/
+
+
+/*console.log("Kebab to snake")
+
+function kebabToSnake(str) {
+	//replace all "-" with "_"
+	var str = str.replace(/-/g, "_");
+	//return str
+	return str;
+}*/
+
+console.log("Higher Order function")
+
+
+
+	</script>
+</head>
+<body>
+	
+
+<h1>Do these exercisess bro!</h1>
+
+</body>
+</html>

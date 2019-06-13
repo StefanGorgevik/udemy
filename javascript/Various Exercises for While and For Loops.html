@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercises</title>
+
+<script type="text/javascript">
+
+//link : https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
+	
+//Write a JavaScript program that accept two integers and display the larger.
+
+
+//Write a JavaScript conditional statement to find the sign of product of three numbers. Display an alert box with the specified sign. Sample numbers: 3; -7, 2.
+
+
+/*var x=3;
+var y=-7;
+var z=2;
+if (x>0 && y>0 && z>0)
+{
+       alert("The sign is +");
+}
+else if (x<0 && y<0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else if (x>0 && y<0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else if (x<0 && y>0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else
+        {
+          console.log("The sign is -");
+        }*/
+
+//Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. Sample numbers: 0, -1, 4
+
+/*var x = 0;
+var y = -1;
+var c = 4;
+
+if(c > 3 && y < 0 && 0 < 4) {
+	console.log("Output: 4, 0, -1");
+}*/
+
+/*Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the result. Sample numbers : -5, -2, -6, 0, -1 */
+
+
+/*---- Link https://www.teaching-materials.org/javascript/exercises/forloops*/
+
+//Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
+
+/*for(num = 0; num <= 20; num++) {
+	if(num % 2 === 0) {
+		console.log(num + " is even");
+	}
+	else {
+		console.log(num);
+	}
+}*/
+
+/*Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18").
+Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).*/ 
+
+/*var multiplier = 9;
+for(var num = 0; num <= 10; num++) {
+	var result = num * multiplier;
+	console.log(num + " * " + multiplier + " = " + result);
+	}
+
+for(var multiplier = 0; multiplier <= 10; multiplier++) {
+	for(var num = 0; num <= 10; num++) {
+		var result = num * multiplier;
+	console.log(num + "*" + multiplier + " = " + result);
+	}
+}
+*/
+
+
+/*The Grade Assigner
+Check the results of your assignGrade function from the conditionals exercise by logging every value from 60 to 100: your log should show "For 88, you got a B. For 89, you got a B. For 90, you got an A. For 91, you got an A.", etc., logging each grade point in the range.*/
+
+//Link - https://github.com/omaracrystal/javascript-loop-exercises
+
+//Solve each of the given problems, writing a loop the outputs the given output to the JavaScript console.
+
+/*var num = 0;
+while(num <=10) {
+	console.log(num);
+	num++;
+}
+
+for(num = 0; num <= 1000; num+=100) {
+	console.log(num);
+}
+
+var num = 0;
+var i = 100;
+while(num <= 1000) {
+	console.log(num + i);
+	num+=i;
+}
+*/
+//1 2 4 8 16 32 64 128
+
+/*var i = 1;
+while(i < 128) {
+	var result = i * 2;
+	console.log(result)
+	i*=2;
+}*/
+
+//Make this pattern: 0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+
+// var i = 0;
+// var repeat = 1;
+// while(i < 5) {
+// 	console.log(i)
+// 	i++;
+
+// 	if(i > 4) {
+// 		repeat++;
+// 		i = 0;
+// 	}
+
+// 	if(repeat > 3) {
+// 		break;
+// 	}
+// }
+// console.log(i, repeat);
+
+//Make this pattern: 1 1 1 2 2 2 3 3 3 4 4 4
+
+// for(var i=1; i<5; i++){
+// 	var repeat = 0;
+// 	while(repeat<3){
+// 		console.log(i);
+// 		repeat++;
+//     }
+//     console.log(" ");
+// }
+
+// for(var i=1; i<5; i++){
+// 	console.log(i);
+// 	console.log(i);
+// 	console.log(i);
+// 	console.log(" ");
+// }
+
+
+
+//3 6 9 12 15
+
+// var i = 0;
+// while(i < 13) {
+// 	var result = i + 3;
+// 	console.log(result);
+// 	i+=3;
+// }
+
+// for(var i = 3; i < 16; i+=3) {
+// 	console.log(i);
+// }
+
+
+//9 8 7 6 5 4 3 2 1 0
+
+// var i = 9;
+// while(i >= 0) {
+// 	console.log(i);
+// 	i++;
+// }
+
+
+//Create a program where the last 3 digits of a number are added together
+
+// var result;
+// var num = prompt("Enter a number");
+// num = Number(num);
+
+// for(var i = 0; i <= num; i++) {
+// 		result += i;
+// 	console.log(result);
+// }
+
+
+//Check the length of a name, and tell if the length is even or odd!
+
+// var name = prompt("enter your name!");
+
+// for(var i =0; i < name.length; i++ ) {
+// 	if(name.length % 2 === 0) {
+// 		console.log("Your name has even number of characters!");
+// 	}
+
+// 	else {
+// 		console.log("Your name has an odd number of characters!");
+// 	}
+// }
+
+// var name = prompt("enter a name!");
+// var i = 0;
+// while(i < name.length) {
+// 	if(name.length % 2 === 0) {
+// 		console.log("Your name has even number of characters!");
+// 		console.log("********************");
+		
+// 	}
+
+// 	else {
+// 		console.log("Your name has an odd number of characters!");
+// 		console.log("********************");
+		
+// 	}
+// 	i++;
+// 	var name = prompt("enter a name!");
+// }
+
+
+
+//Print all odd and even numbers and save them in a separate array
+
+// var start = prompt("Enter any number to print all odd and even  numbers of it!");
+//      var start = parseInt(start);
+//      var even = [];
+//      var odd = [];     
+
+//   for(var br = 0; br <= start; br++){
+//    if(br % 2 === 0){
+//        console.log("Even - " +br);
+//        even.push(br);
+
+//      }
+//      else if(br % 2 !==0){
+//            console.log("Odd - " +br);
+//            odd.push(br);
+//      }
+//      }
+//      console.log(even);
+//      console.log(odd);
+
+
+</script>
+
+</head>
+<body>
+
+
+</body>
+</html>

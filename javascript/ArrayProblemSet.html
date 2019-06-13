@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Problem Set</title>
+	<script type="text/javascript">
+		
+//printReverse - write a function that will print the items of an array in reverse!
+	function printReverse(arr) {
+		for(var i = arr.length-1; i >= 0; i--);
+			console.log(arr[i]);
+	}
+
+
+//isUniform function which takes an array as an argument and returns true if all elements are identical
+
+
+function isUniform(arr) {
+	var first = arr[0];
+	for(var i = 1; i < arr.length; i++) {
+		if(arr[i] !== first) {
+			return false;
+		}
+	}
+	return true;
+}
+
+//sumArray - function that accepts an array of numbers and returns the sum of all numbers in the array
+
+function sumArray(arr) {
+	var total = 0;
+	arr.forEach(function(element){
+		total += element;
+	});
+	return total;
+}
+
+//max() - function that accepts an array of numbers and returns the maximum number in the array
+
+function max(arr) {
+	var max = arr[0];
+	for(var i = 1; i < arr.length; i++) {
+		if(arr[i] > max) {
+			max = arr[i];
+		}
+	}
+	return max;
+}
+
+	</script>
+</head>
+<body>
+
+<h1>YO DO THESE EXERCISES!</h1>
+
+</body>
+</html>

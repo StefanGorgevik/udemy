@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+
+	<script type="text/javascript">
+
+//isEven exercise(check if the number is even with return keyword function!)
+		
+	function isEven(num) {
+		if(num % 2 == 0) {
+			return("true!")
+		}
+		else {
+			return("false!")
+		}
+	}
+//factorial exercise factorial(4) 4 x 3 X 2 x 1
+//ver.1 use 1 as a starting poing 1 x 2 x 3 x 4
+
+/*function factorial(num) {
+	//define a result variable
+	var result = 1;
+	//calculate factorial and store value in result
+ 	for(var i = 2; i <= num; i++){
+ 	result *= i;
+ 	}
+	//return the result variable
+	return result;
+}*/
+
+//ver.2 use 4 x 3 x 2 x 1
+
+/*function factorial(num) {
+
+	if(num === 0) {      // in order for 0 to become 1
+		return 1;
+	}
+	//define a result variable
+	var result = num;
+	//calculate factorial and store value in result
+ 	for(var i = num-1; i >=1; i--){
+ 	result *= i;
+ 	}
+	//return the result variable
+	return result;
+}
+*/
+//da vneses broj, dokolku brojot e paren da go ispecati zbirot na cifrite koi se naogaat na parni pozicii kaj brojot kade poslednata cifra od brojot e na pozicija 1 ; dokolku e neparen - da go ispecati zbirot na cifrite na neparnite pozicii
+
+//myattempt afterward
+
+function evenNumber(num) {
+	var i = 1;
+	var temp = num;
+	zbir = 0;
+	while(temp > 0) {
+		if(i % 2 === 0) {
+			zbir += parseInt(temp % 10);
+		}
+		temp = parseInt(temp / 10);
+		i++;
+	}
+	console.log(zbir);
+}
+
+function oddNumber(num) {
+	var i = 1;
+	var temp = num;
+	zbir = 0;
+	while(temp > 0) {
+		if(i % 2 === 1) {
+			zbir += parseInt(temp % 10);
+		}
+			temp = parseInt(temp / 10);
+		i++;
+	}
+	console.log(zbir);
+}
+
+function isIt(num) {
+	if(num % 2 == 0) {
+		evenNumber(num);
+	}
+	else {
+		oddNumber(num);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function evenNumbers(num) {
+	var i = 1;
+	var temp = num;
+	var zbir = 0;
+	while(temp > 0) {
+		if(i % 2 == 0) {
+			zbir += parseInt(temp % 10);
+		}
+				temp = parseInt(temp / 10);
+		i++;
+	}
+	console.log(zbir);
+}
+
+function oddNumbers(num) {
+	var i = 1;
+	var temp = num;
+	var zbir = 0;
+	while(temp > 0) {
+		if(i % 2 == 1) {
+			zbir += parseInt(temp % 10);
+		}
+				temp = parseInt(temp / 10);
+		i++;
+	}
+	console.log(zbir);
+}
+
+	function isItEven(num) {
+		if(num % 2 == 0) {
+			evenNumbers(num);
+		}
+		else {
+			oddNumbers(num);
+		}
+	}*/
+
+// Ver.2
+
+
+	/*function numbers(num, check){
+		var i = 1;
+		var temp = num;
+		var zbir = 0;
+		if(check == 0){
+			while(temp > 0) {
+				if(i % 2 == 1) {
+					zbir += parseInt(temp % 10);
+				}
+				temp = parseInt(temp / 10);
+				i++;
+			}
+		}
+		else if(check == 1){
+			while(temp > 0) {
+				if(i % 2 == 0) {
+					zbir += parseInt(temp % 10);
+				}
+				temp = parseInt(temp / 10);
+				i++;
+			}
+		}
+		console.log(zbir);
+	}
+
+	function isNumberEven(num) {
+		if(num % 2==0){
+			numbers(num, parseInt(1));
+		}
+		else
+			numbers(num, 0);
+	}*/
+
+//kebabToSnake Exercise
+
+function kebabToSnake(str) {
+	//replace all "-" with "_"
+	var newStr = str.replace(/-/g, "_");
+
+	//return str
+	return newStr;
+}
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+	background: url(https://images.pexels.com/photos/761142/pexels-photo-761142.jpeg?auto=compress&cs=tinysrgb&h=350);
+/*	background-repeat: no-repeat;
+	background-size: cover;*/
+	font-family: Chakra Petch;
+}
+
+h1 {
+	margin-left: 500px;
+	}
+
+p {
+	font-weight: 700;
+	font-size: 2em;
+	text-align: justify;
+}
+
+li:nth-of-type(3) {
+	margin-left: 150px;
+}
+
+div {
+	color: white;
+}
+	label {
+		font-size: 35px;
+		color: blue;
+		text-transform: uppercase;	
+		text-decoration: underline;
+	}
+
+input:checked {
+	margin-left: 50px;
+
+}	
+
+input[type="checkbox"]{
+width: 30px;
+height: 30px;
+
+}
+
+label:hover {
+	color: white;
+}
+input[type="checkbox"]{
+    background: blue;
+}
+
+a:visited {
+	color: rgb(150,150,0);
+}
+
+ul li {
+	color: white;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Image Gallery #3</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<style type="text/css">
+
+	form {
+		font-family: Arial;
+		font-weight: bold;
+		color: black;
+		padding-left: 700px;
+		background: rgb(100,80,20); 
+		border: 5px solid pink;
+	}
+
+	h1 { 
+		font-weight: 700;
+		letter-spacing: 0.7rem;
+		text-align: center;
+	 }
+
+	 h1:hover {
+	 	color: gray;
+	 }
+
+	p:hover {
+		color: blue;
+	}
+
+	body {
+		font-family: Charmonman;
+		font-weight: 700;
+		margin-top: 70px;
+	}
+
+	a:visited {
+		color: blue;
+	}
+
+	.navbar-default {
+		background: brown;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: white;
+		font-size: 17px;
+	}
+	
+	.navbar-default .navbar-brand {
+		color: white;
+	}
+
+	.jumbotron {
+		background: rgb(100,80,20);
+		color: white;
+	}
+
+	#emailinput {
+		margin-left: 33px;
+	}
+
+	#passwordinput {
+		margin-left: 5px;
+	}
+
+	input[type="submit"] {
+		margin-left: 7%;
+	}
+
+	#jumbtext {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	img {
+		height: 510px;
+	}
+
+	.thumbnail {
+		border: 3px solid brown;
+	}
+
+	.thumbnail a>img, .thumbnail>img {
+		height: 510px;
+	}
+
+	input:checked {
+		margin-left: 35px;
+	}
+
+
+	input[type="checkbox"] {
+		width: 14px;
+		height: 14px;
+	}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="https://www.instagram.com/p/BoJZoJgHhRwUc2SH9yWzzu9d5NAhDgVaBXdLPs0/?hl=en&taken-by=stefan.gorgevik" class="navbar-brand"><i class="far fa-images"></i> IMGS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      	<ul class="nav navbar-nav">
+      		<li><a href="https://www.instagram.com/stefan.gorgevik/?hl=en">Instagram</a></li>
+      		<li><a href="https://www.facebook.com/furious.stefan/about?lst=1650044429%3A1650044429%3A1540822515">About me</a></li>
+      		<li><a href="https://www.facebook.com/furious.stefan">Contact</a></li>
+      	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+      		<li><a href="#">Sing up!</a></li>
+      		<li><a href="#">Login</a></li>
+      	</ul>
+      	
+      </div>
+
+
+	
+	</div>
+</nav>
+
+
+<div class="container">
+	<div class="jumbotron">
+		<h1><i class="fas fa-camera-retro"></i> This my choice of the best photos that I have seen!</h1><br>
+		<p id="jumbtext"><i class="far fa-grin-squint-tears"></i> I really hope you'll like them! <i class="far fa-laugh-squint"></i></p>
+	</div>
+	
+</div>
+
+<div class="container">
+<div class="row">
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540740119008-aa0ddc20f075?ixlib=rb-0.3.5&s=ad51db43820faa16aad358c13296cf1d&auto=format&fit=crop&w=282&q=80"></div></div>
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540712313894-90266a53e530?ixlib=rb-0.3.5&s=0dff96832361ab57e6018d38b98ec03b&auto=format&fit=crop&w=334&q=80"></div></div>
+
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail photoss"><img src="https://images.unsplash.com/photo-1540727852126-356e6fc288db?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbfc2435970b78c3d551b2c125f839c6&auto=format&fit=crop&w=375&q=80"></div></div>
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540728903870-8ea6902c580b?ixlib=rb-0.3.5&s=8924a066aca67d96111c3ff6bda2df99&auto=format&fit=crop&w=334&q=80"></div></div>
+
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540755509690-f3f8a2298b27?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=46cac3db107be360f40c0a59025bcfb4&auto=format&fit=crop&w=334&q=80"></div></div>
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540668986314-e94dddd24a67?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2bbe509d1d48b170a559e54478b7bf7&auto=format&fit=crop&w=334&q=80"></div></div>
+
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540668986314-e94dddd24a67?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2bbe509d1d48b170a559e54478b7bf7&auto=format&fit=crop&w=334&q=80"></div></div>
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail photoss"><img src="https://images.unsplash.com/photo-1540690574994-69de75ab59da?ixlib=rb-0.3.5&s=67389e2a39e8d69a094b4b671f222a95&auto=format&fit=crop&w=334&q=80"></div></div>
+
+	<div class="col-lg-4 col-md-4 col-sm-6"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540660831480-01f5b1429564?ixlib=rb-0.3.5&s=9d24ccb6d444b7fd379ea24dd9286321&auto=format&fit=crop&w=375&q=80"></div></div>
+<!-- 	<div class="col-lg-4"><div class="thumbnail"><img src="https://images.unsplash.com/photo-1540206395-25926266db56?ixlib=rb-0.3.5&s=7880dcc02a674b60dde8743d86d4dfae&auto=format&fit=crop&w=295&q=80"></div></div> -->
+
+	
+</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<form>
+	<label>
+		<h3>How much did you like these photos?</h3>
+		<select name="likeness">
+			<option>Select</option>
+			<option value="Not at all!">Not at all!</option>
+			<option value="Not much!">Not much!</option>
+			<option value="They were fine!">They were fine!</option>
+			<option value="I like them!">I like them!</option>
+			<option value="They were beautiful">They were beautiful</option>
+		</select>
+
+	</label>
+	<br>
+	<textarea name="opinion" cols="60" rows="6" placeholder="Opinion"></textarea>
+<br>
+	<p>Would you like to see more content?</p>
+	<label>Yes
+	<input type="radio" name="Wouldyouliketoseemore" value="yes"></label>
+
+	<label>No
+	<input type="radio" name="Wouldyouliketoseemore" value="no"></label>
+
+	<h2>Register Below!</h2>
+	<label>
+		First Name: 
+		<input type="text" name="First Name" required>
+	</label>
+<br>
+	<label>
+		Last Name:
+		<input type="text" name="Last Name" required>
+	</label>
+<br>
+	<label>
+		Email:
+		<input id="emailinput" type="email" name="Email" required>
+	</label>
+<br>
+	<label>
+		Password:
+		<input id="passwordinput" type="password" name="Password" pattern=".{5,10}" required title="Please write 5 to 10 characters!">
+	</label>
+<br>
+	<label for="terms">I agree that these photos are beautiful!</label>
+	<input id="terms" type="checkbox" name="terms">
+<br>
+	<label for="comeback">I promise I will comeback</label>
+	<input id="comeback" type="checkbox" name="comeback">
+<br>
+
+<input type="submit" name="Submit" value="Sign Up!">
+
+</form>
+
+</body>
+</html>

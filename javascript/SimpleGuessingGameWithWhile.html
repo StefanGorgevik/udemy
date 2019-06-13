@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Guessing Game With While</title>
+
+<script type="text/javascript">
+
+/*var secretNumber = 8;
+	
+var guess = prompt("Guess the secret number!")
+
+var secretNumber = Number(secretNumber);
+
+while(guess != secretNumber) {
+	guess = prompt("PSYCH THAT'S THE WRONG NUMBA!");
+}
+
+if(guess == secretNumber) {
+		alert("You have guessed it!")
+	}
+*/
+
+
+//with high or low (first try)
+
+/*var secretNumber = 8;
+	
+var guess = prompt("Guess the secret number!");
+
+var secretNumber = Number(secretNumber);
+
+while(guess > secretNumber) {
+	guess = prompt("Too high. Guess again!");
+}
+
+while(guess < secretNumber) {
+		guess = prompt("Too low! Guess again!");
+	}
+
+if(guess == secretNumber) {
+		alert("You have guessed it!");
+	}
+*/
+
+//with high or low (2nd try)
+
+/*var secretNumber = 8;
+	
+var guess = prompt("Guess the secret number!");
+
+var secretNumber = Number(secretNumber);
+
+while(true) {
+	
+		if(guess > secretNumber) {	{
+			guess = prompt("Too high! Guess again!");
+			}
+
+			else if(guess < secretNumber){
+				guess = prompt("Too low! Guess again!");
+			}
+			else
+				alert("You have guess it!");
+}
+*/
+
+
+//Ile's way
+
+var secretNumber = 8;
+	
+var guess = prompt("Guess the secret number!");
+
+var secretNumber = Number(secretNumber);
+
+while(true){
+		
+	if(guess == secretNumber){
+		alert("You have guessed it!");
+		break;
+	}
+	else if(guess < secretNumber)
+		guess =  prompt("Too low! Guess again");
+	else guess = prompt("Too high. Guess again!"); 
+}
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

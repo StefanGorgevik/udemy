@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Part 2</title>
+	<style type="text/css">
+		
+		.class1 {
+			color: pink;
+		}
+
+		.done {
+			text-decoration: line-through;
+			opacity: 0.5;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	 <ul>
+		<li>Study</li>
+		<li>Exercise</li>
+		<li>Go to your study</li>
+ 	</ul>
+
+ 	<script type="text/javascript">
+ 		
+ 		  var lis = document.querySelectorAll("li");
+
+ 		  for(var i = 0; i < lis.length; i++){
+ 		  	lis[i].addEventListener("mouseover", function() {
+  				this.classList.add("class1");
+  			});
+
+ 		 lis[i].addEventListener("mouseout", function() {
+  				this.classList.remove("class1");
+ 		 });
+
+ 		  lis[i].addEventListener("click", function() {
+ 		  		this.classList.toggle("done");
+ 		  });
+
+ 		  
+ 		  }
+
+  		
+
+ 	</script>
+
+</body>
+</html>
