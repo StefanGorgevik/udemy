@@ -16,7 +16,7 @@ app.get("/dog", (req, res) => {
 
 app.get("/books/:number/:title", (req,res) => {
     res.send("Book number is " + req.params.number + " and the title is " + req.params.title);
-})
+});
 
 app.get("*", (req,res) => {
     res.send("Star! You have a error!")
